@@ -613,8 +613,6 @@ do{
   };
   ```
 
-
-
 ### 基本数据类型和引用数据类型
 
 - 基本数据类型
@@ -641,8 +639,6 @@ do{
   
   - 以方法的形式调用时，this就是调用方法的那个对象
 
-
-
 ### 数组（Array）
 
 - 数组也是一个对象
@@ -664,16 +660,25 @@ do{
   var arr1 = new Array(1,2,3,4,5,6,7,8,9);
   
   
-  // 创建长度为10的数组
-  var arr2 = new Array(10);
   ```
 
+```
+
+```
+
+```
+
+// 创建长度为10的数组
+var arr2 = new Array(10);
+
+```
+
 - 方式二：使用字面量 [] 来创建数组
-  
-  ```javascript
-  var arr = [];
-  var arr1 = [1,2,3,4,5,6,7,8,9];
-  ```
+
+```javascript
+var arr = [];
+var arr1 = [1,2,3,4,5,6,7,8,9];
+```
 
 #### 添加数组元素
 
@@ -738,7 +743,7 @@ arr.length = 10;
 
 ##### unshift()方法
 
--  向数组的开头添加一个或者多个元素，并返回新的长度
+- 向数组的开头添加一个或者多个元素，并返回新的长度
   
   ```javascript
   arr.unshift("新的");
@@ -815,8 +820,6 @@ arr.length = 10;
   arr.sort();
   ```
 
-
-
 #### 数组的遍历
 
 ```javascript
@@ -840,8 +843,6 @@ arr.forEach(function(value, index, obj){
     console.log("value:" + value + ",index:" + index + ",obj:" + obj);
 });
 ```
-
-
 
 ### Date时间对象
 
@@ -909,3 +910,88 @@ arr.forEach(function(value, index, obj){
 ```javascript
 Date.now();
 ```
+
+### Math
+
+- Math和其他的对象不同，它不是一个构造函数，它属于一个工具类
+
+- 封装了数学运算相关的属性和方法
+
+- Math.PI：表示圆周率
+
+- abs()方法：可以用来计算一个数的绝对值
+  
+  ```javascript
+  Math.abs(-1);
+  ```
+
+- ceil()方法：用来对数进行向上取整
+  
+  ```javascript
+  Math.ceil(1.4);    // 2
+  ```
+
+- floor()方法：用来对数进行向下取整
+  
+  ```javascript
+  Math.floor(1.2);    // 1
+  ```
+
+- round()方法：用来对数进行四舍五入
+  
+  ```javascript
+  Math.round(1.4);    // 1
+  Math.round(1.6);    // 2
+  ```
+
+- random()方法：可以用来生成一个0-1之间的随机数
+  
+  ```javascript
+  Math.random();
+  ```
+
+- max()方法：可以获取多个数中的最大值
+  
+  ```javascript
+  Math.max(10, 20, 30);
+  ```
+
+- min()方法：可以获取多个数中的最小值
+  
+  ```javascript
+  Math.min(10, 20, 30);
+  ```
+
+- pow(x， y)方法：返回x的y次幂
+  
+  ```javascript
+  Math.pow(10, 3);
+  ```
+
+- sqrt()方法：获取数的开方
+  
+  ```javascript
+  Math.sqrt(9);
+  ```
+
+### 包装类
+
+- Js中提供了三个包装类，通过这三个包装类可以将基本数据类型转换为对象
+  
+  - String()：可以将基本数据类型字符串转换为String对象
+    
+    ```javascript
+    var str = new String("hello");
+    ```
+  
+  - Number()：可以将基本数据类型的数字转换为Number对象
+    
+    ```javascript
+    var num = new Number(123);
+    ```
+  
+  - Boolean()：可以将基本数据类型的布尔值转换为Boolean对象
+    
+    ```javascript
+    var bool = new Boolean(true);
+    ```
